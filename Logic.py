@@ -33,7 +33,7 @@ class Logic(QMainWindow, Ui_MainWindow):
         """
         Grabs name then sees if it is empty if it is then it will not let it pass/write and will return.
         """
-        name : str = self.StudentBox.toPlainText().strip()
+        name : str = self.StudentBox.toPlainText()
 
         if name == '':
             self.SubmitLabel.setText("Enter name for student")

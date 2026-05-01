@@ -36,7 +36,7 @@ class Logic(QMainWindow, Ui_MainWindow):
         name : str = self.StudentBox.toPlainText()
 
         if name == '':
-            self.SubmitLabel.setText("Enter name for student")
+
             return
 
         """
@@ -187,7 +187,7 @@ class Logic(QMainWindow, Ui_MainWindow):
         then clears all boxes. After that it turns all the score boxes invisible
         and sets cursor onto the student name box
         """
-        self.SubmitLabel.setText("")
+        self.SubmitLabel.setText("Submitted")
 
 
         self.StudentBox.clear()
